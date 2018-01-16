@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+%\usepackage{times}
+\usepackage{cite}
+%this is a comment
+\title{CS 361 Vision Statement \\ Digital Ghostwriter}
+\author{Zachary Thomas (thomasza), Tommy Hollenberg (hollenbt)}
+\date{January 13th, 2018}
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\newpage
+
+\section{Problem Statement}
+
+Writing a book is a lot of work and is very time consuming. Many authors struggle with writer's block. Some authors lack the motivation to complete a book, or simply are unable to find time to write due to leading busy lives.\cite{WritingChallenges}
+\newline
+\newline
+A writer experiencing writer's block may never get past this personal hurdle and may become frustrated and abandon their work.
+
+\section{Solution Description}
+
+Having an application that can write books based on specific user criteria, allows users to write books that they may never have had the time or motivation to create. It also may allow authors with writer's block to explore ways in which they themselves could advance their own stories.
+
+\section{Different approaches}
+
+Most previous approaches of book writing AI rely on a user being shown a selection of the next most probable word and then having the user select the word that they find most appealing. While this approach does allow control over the end result it also is very time intensive.\cite{JapaneseAIWritesaNovel}
+\newline
+\newline
+The application being presented here instead has a user set some options at the beginning such as genre and page count and then outputs a complete book to a text file with no further user input thus making it very time efficient.
+\newline
+\newline
+An acceptable limitation of our design is that the depth of control allowed by pre-generation options will not compete with that of having control over every word in the book.
+
+\newpage
+
+\section{System Architecture}
+
+Access to language libraries.
+\newline
+Machine learning algorithms.
+\newline
+Ability to output text documents.
+
+\section{Challenges}
+
+The biggest challenge with this project is having the application write a book that could have believably been written by a person and is not just a mess of incoherent words smashed together. 
+\newline
+\newline
+The best way for us to reduce the risk of the book feeling incoherent is to have the application break the book into structured blocks. Each block may have specific rules that set it apart such as an introduction block focusing on a protagonist and using descriptive language. Some sentences may be hard coded while others use a machine learning algorithm to give us further control over the final result.
+
+\bibliography{myref}
+\bibliographystyle{IEEEtran}
+
+\end{document}
